@@ -1,0 +1,19 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+:root {
+  --main-color: #00312d;
+  --main-color-hover: #004540;
+  --secondary-color: #10a196;
+  --secondary-color-hover: #128c82;
+  --yellow: #ffc700;
+  --slight-yellow: #e9e000;
+  --white: rgb(255, 255, 255);
+  --grey: #808080;
+}

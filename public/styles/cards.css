@@ -1,0 +1,164 @@
+/* cards */
+
+.cards {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa;
+}
+
+.cards__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.cards__subtitle {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.card__line {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: var(--secondary-color);
+}
+
+.cards__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.cards__title span {
+  color: var(--secondary-color);
+}
+
+.cards__list {
+  margin-top: 100px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 387px;
+  height: 626px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #e6e6e6;
+  background: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.card__name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.card__name p {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.card__name span {
+  text-align: center;
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.card__price {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card__price p {
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.card__price span {
+  text-align: center;
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.card__bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__btn-left {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-color);
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.card__btn-left svg {
+  stroke: var(--white);
+}
+
+.card__btn-left:hover {
+  background: var(--main-color-hover);
+}
+
+.card__btn-right {
+  width: 285px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color);
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 19px;
+  color: var(--white);
+  transition: all 0.2s ease;
+}
+
+.card__btn-right:hover {
+  background: var(--secondary-color-hover);
+}

@@ -1,0 +1,35 @@
+/* features */
+
+.features {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 175px;
+  background: var(--main-color);
+}
+
+.features__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.features__item p {
+  color: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+.features__item svg {
+  fill: var(--white);
+  transition: all 0.2s ease-in-out;
+}
+
+.features__item:hover svg {
+  fill: var(--yellow);
+}
+.features__item:hover p {
+  color: var(--yellow);
+}
