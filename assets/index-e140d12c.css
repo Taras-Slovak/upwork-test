@@ -63,22 +63,22 @@ meter {
 }
 @font-face {
   font-family: Poppins;
-  src: url(/assets/Poppins-Regular-45ad3c79.otf);
+  src: url(assets/Poppins-Regular-45ad3c79.otf);
   font-weight: 400;
 }
 @font-face {
   font-family: Poppins;
-  src: url(/assets/Poppins-Medium-9855b001.otf);
+  src: url(assets/Poppins-Medium-9855b001.otf);
   font-weight: 500;
 }
 @font-face {
   font-family: Poppins;
-  src: url(/assets/Poppins-SemiBold-b6938a29.otf);
+  src: url(assets/Poppins-SemiBold-b6938a29.otf);
   font-weight: 600;
 }
 @font-face {
   font-family: Poppins;
-  src: url(/assets/Poppins-Bold-50af8bcb.otf);
+  src: url(assets/Poppins-Bold-50af8bcb.otf);
   font-weight: 700;
 }
 .glider-contain {
