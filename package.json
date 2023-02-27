@@ -12,6 +12,7 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
+    "glider-js": "^1.7.8",
     "vite-plugin-handlebars": "^1.6.0"
   }
 }

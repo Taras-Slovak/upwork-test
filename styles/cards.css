@@ -26,7 +26,7 @@
   color: #999999;
 }
 
-.card__line {
+.cards__line {
   display: block;
   width: 50px;
   height: 2px;
@@ -53,6 +53,7 @@
 }
 
 .card {
+  position: relative;
   width: 387px;
   height: 626px;
   display: flex;
@@ -64,8 +65,30 @@
   transition: all 0.2s ease-in-out;
 }
 
+.card::after {
+  position: absolute;
+  content: 'Bestseller';
+  top: -13px;
+  width: 116px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white);
+  background: var(--yellow);
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
 .card:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover.card::after {
+  box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card__content {
@@ -161,4 +184,77 @@
 
 .card__btn-right:hover {
   background: var(--secondary-color-hover);
+}
+
+@media only screen and (max-width: 1800px) {
+  .cards__list {
+    padding: 0 20px;
+    justify-content: center;
+    gap: 33px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .cards {
+    padding: 50px 0;
+  }
+
+  .cards__top {
+    gap: 17px;
+  }
+
+  .cards__subtitle {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5em;
+  }
+
+  .cards__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .cards__list {
+    margin-top: 33px;
+    padding: 0 20px;
+    justify-content: center;
+    gap: 33px 10px;
+  }
+
+  .card {
+    width: 155px;
+    height: 457px;
+  }
+
+  .card__name p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .card__name span {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .card__price p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__price span {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .card__bottom {
+    flex-direction: column;
+  }
+
+  .card__btn-left,
+  .card__btn-right {
+    width: 135px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }

@@ -8,8 +8,11 @@
   <body>
     <div class="wrapper">
       {{> header }}
-      <main>{{> promo }} {{> features }} {{> cards }} {{> mission }}</main>
-      <footer></footer>
+      <main class="main">
+        {{> promo }} {{> features }} {{> cards }} {{> mission }} {{> reviews}}
+        {{> story}}
+      </main>
+      {{> footer }}
     </div>
     <script type="module" src="/main.js"></script>
   </body>

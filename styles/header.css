@@ -56,3 +56,34 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
+
+@media only screen and (max-width: 1300px) {
+  .header {
+    height: 40px;
+  }
+
+  .header__item:nth-child(1),
+  .header__item:nth-child(3) {
+    display: none;
+  }
+  .header__item:nth-child(2) {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .header__item label:before {
+    width: 18px;
+    height: 18px;
+    background-color: var(--slight-yellow);
+  }
+
+  .header__item input:checked + label:after {
+    top: 5px;
+    left: 9px;
+    width: 4px;
+    height: 12px;
+    border: 5px solid var(--main-color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+}

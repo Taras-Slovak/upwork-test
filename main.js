@@ -1,9 +1,23 @@
-import './public/styles/reset.css';
-import './public/styles/fonts.css';
+//reset style
+import './styles/reset.css';
+
+//fonts
+import './styles/fonts.css';
+
+// libs
+import './styles/glider.css';
+
+// styles
 import './style.css';
-import './public/styles/header.css';
-import './public/styles/promo.css';
-import './public/styles/features.css';
-import './public/styles/cards.css';
-import './public/styles/mission.css';
-// import './public/scripts/counter.js';
+import './styles/header.css';
+import './styles/promo.css';
+import './styles/features.css';
+import './styles/cards.css';
+import './styles/mission.css';
+import './styles/reviews.css';
+import './styles/story.css';
+import './styles/footer.css';
+
+// js
+import './scripts/glider.js';
+import './scripts/adaptive.js';
