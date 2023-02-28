@@ -802,6 +802,7 @@ body {
     letter-spacing: 0.5em;
   }
   .cards__title {
+    max-width: 300px;
     font-size: 28px;
     line-height: 34px;
   }
@@ -946,6 +947,9 @@ body {
     left: 60px;
     color: var(--secondary-color);
   }
+  .mission__content {
+    padding-top: 50px;
+  }
 }
 @media only screen and (max-width: 1300px) {
   .mission {
@@ -1020,6 +1024,9 @@ body {
   }
   .mission__btn {
     display: none;
+  }
+  .mission__content {
+    padding-top: 0;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1132,7 +1139,7 @@ body {
 .splide__arrows {
   position: absolute;
   flex-grow: 1;
-  width: 1210px;
+  width: 64%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -1252,14 +1259,8 @@ body {
   .reviews__card {
     padding: 30px;
   }
-  .splide__arrows {
-    width: 800px;
-  }
 }
 @media only screen and (max-width: 1000px) {
-  .splide__arrows {
-    width: 600px;
-  }
   .reviews__card h4 {
     font-size: 18px;
     line-height: 22px;

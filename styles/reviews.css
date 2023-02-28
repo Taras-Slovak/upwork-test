@@ -98,7 +98,7 @@
 .splide__arrows {
   position: absolute;
   flex-grow: 1;
-  width: 1210px;
+  width: 64%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -235,17 +235,9 @@
   .reviews__card {
     padding: 30px;
   }
-
-  .splide__arrows {
-    width: 800px;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
-  .splide__arrows {
-    width: 600px;
-  }
-
   .reviews__card h4 {
     font-size: 18px;
     line-height: 22px;

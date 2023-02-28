@@ -120,6 +120,10 @@
     left: 60px;
     color: var(--secondary-color);
   }
+
+  .mission__content {
+    padding-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -208,6 +212,10 @@
 
   .mission__btn {
     display: none;
+  }
+
+  .mission__content {
+    padding-top: 0px;
   }
 }
 
