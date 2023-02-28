@@ -167,9 +167,13 @@
 }
 
 .splide__pagination {
-  bottom: -60px;
+  height: 100px;
+  bottom: -100px;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0px 10px;
 }
 
 .splide__pagination__page {

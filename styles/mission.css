@@ -169,10 +169,6 @@
     left: -120px;
     top: 60px;
   }
-
-  .mission__content {
-    padding-top: 30px;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -230,12 +226,14 @@
 
   .mission__second {
     position: absolute;
+    right: 75px;
     top: 40px;
   }
 
   .mission__third {
     position: absolute;
-    top: 90px;
+    left: -75px;
+    top: 40px;
   }
 
   .mission__txt {

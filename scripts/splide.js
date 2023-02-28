@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       800: {
         perPage: 1,
-        gap: '50px',
+        gap: '10px',
       },
     },
   }).mount();
