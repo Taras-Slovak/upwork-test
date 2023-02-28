@@ -1,8 +1,9 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 .wrapper {
+  position: relative;
   max-width: 1920px;
   margin: auto;
 }

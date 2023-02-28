@@ -68,13 +68,12 @@
   border-radius: 50%;
 }
 
-.glider-contain {
-  margin-top: 100px;
+#splide-reviews {
+  margin-top: 50px;
 }
 
-.glider-item {
+.reviews__card {
   padding: 50px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -82,21 +81,21 @@
   border-radius: 3px;
 }
 
-.glider-item h4 {
+.reviews__card h4 {
   font-weight: 600;
   font-size: 24px;
   line-height: 24px;
   color: #4d4d4d;
 }
 
-.glider-item p {
+.reviews__card p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
 }
 
-.glider-buttons {
+.splide__arrows {
   position: absolute;
   flex-grow: 1;
   width: 1210px;
@@ -105,10 +104,10 @@
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
+  z-index: 300;
 }
 
-.glider-prev,
-.glider-next {
+.splide__arrow {
   position: static;
   width: 65px;
   height: 65px;
@@ -118,6 +117,23 @@
   background: #10a196;
   border-radius: 100px;
   color: var(--white);
+  transform: translate(0);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.splide__arrow:disabled {
+  opacity: 0.5;
+}
+
+.splide__arrow--prev svg {
+  transform: scaleX(1);
+}
+
+.splide__arrow svg {
+  fill: none;
+  height: auto;
+  width: auto;
 }
 
 .opacity-left {
@@ -150,21 +166,21 @@
   );
 }
 
-.dots {
-  margin-top: 40px;
-  display: none;
+.splide__pagination {
+  bottom: -60px;
+  display: flex;
+  gap: 20px;
 }
 
-.glider-dot {
-  color: #10a196;
-  background: var(--secondary-color);
-  opacity: 0.2;
+.splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  background: #10a196;
+  opacity: 0.4;
 }
 
-.glider-dot:hover,
-.glider-dot:focus,
-.glider-dot.active {
-  background: var(--secondary-color);
+.splide__pagination__page.is-active {
+  background: #10a196;
   opacity: 1;
 }
 
@@ -194,11 +210,7 @@
 
 @media only screen and (max-width: 1300px) {
   .reviews {
-    padding: 50px 0;
-  }
-
-  .glider-contain {
-    margin-top: 50px;
+    padding: 50px 0 100px 0;
   }
 
   .reviews__top {
@@ -216,37 +228,30 @@
     line-height: 34px;
   }
 
-  .glider-item {
+  .reviews__card {
     padding: 30px;
   }
 
-  .glider-buttons {
+  .splide__arrows {
     width: 800px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  .glider-buttons {
+  .splide__arrows {
     width: 600px;
   }
 
-  .glider-item h4 {
+  .reviews__card h4 {
     font-size: 18px;
     line-height: 22px;
   }
 
-  .glider-item p {
+  .reviews__card p {
     font-size: 15px;
     line-height: 22px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .glider-buttons {
-    display: none;
-  }
-
-  .dots {
-    display: flex;
-  }
 }

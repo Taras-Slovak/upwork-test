@@ -2,10 +2,10 @@
 import './styles/reset.css';
 
 //fonts
-import './styles/fonts.css';
+// import './styles/fonts.css';
 
 // libs
-import './styles/glider.css';
+import '@splidejs/splide/css';
 
 // styles
 import './style.css';
@@ -19,5 +19,5 @@ import './styles/story.css';
 import './styles/footer.css';
 
 // js
-import './scripts/glider.js';
+import './scripts/splide.js';
 import './scripts/adaptive.js';

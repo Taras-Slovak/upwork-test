@@ -53,6 +53,12 @@
   background: var(--main-color-hover);
 }
 
+@media only screen and (min-width: 2500px) {
+  .promo__inner {
+    padding-left: 25%;
+  }
+}
+
 @media only screen and (max-width: 1800px) {
   .promo__title {
     font-size: 60px;
@@ -79,6 +85,7 @@
 
 @media only screen and (max-width: 1050px) {
   .promo__title {
+    font-weight: 600;
     font-size: 30px;
     line-height: 36px;
     text-transform: none;
@@ -92,25 +99,30 @@
 
 @media only screen and (max-width: 430px) {
   .promo {
-    height: 650px;
-    padding: 0 10px;
+    height: 590px;
+    padding: 0 0px;
     background-image: url('images/bg-m.webp');
   }
 
   .promo__title {
+    max-width: 312px;
+    margin: auto;
+    font-weight: 600;
     font-size: 30px;
     line-height: 36px;
     text-transform: none;
   }
 
   .promo__sub-title {
+    margin-top: 20px;
+    font-weight: 500;
     font-size: 15px;
     line-height: 22px;
   }
 
   .promo__inner {
     text-align: center;
-    padding-top: 350px;
+    padding-top: 330px;
     padding-left: 0;
     margin: 0;
   }
@@ -118,6 +130,6 @@
   .promo__btn {
     width: 220px;
     height: 60px;
-    margin: 40px auto 0 auto;
+    margin: 25px auto 0 auto;
   }
 }

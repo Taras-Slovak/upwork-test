@@ -16,22 +16,10 @@ function adaptiveSections() {
   }
 }
 
-adaptiveSections();
-
-function adaptiveFooter() {
-  const width = document.documentElement.clientWidth;
-  const footer = document.querySelector('.footer');
-  if (width < 900) {
-    footer.innerHTML = `Please use the desktop 
-  footer as inspiration for the
-  mobile footer`;
-    footer.classList.add('adaptive-footer');
-  }
-}
-
-adaptiveFooter();
+document.addEventListener('DOMContentLoaded', () => {
+  adaptiveSections();
+});
 
 addEventListener('resize', () => {
   adaptiveSections();
-  adaptiveFooter();
 });
